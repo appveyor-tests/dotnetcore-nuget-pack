@@ -4,6 +4,8 @@ dotnet_csproj:
   file: '**\*.csproj'
   version: '{version}'
   package_version: '{version}'
+before_build:
+- cmd: dotnet restore
 build:
   publish_nuget: true
   publish_nuget_symbols: true
@@ -12,6 +14,11 @@ build:
 deploy_script:
 - ps: |
     $expectedPackageName = "dotnetcore-nuget-pack.$env:appveyor_build_version.nupkg"
-    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "nuget package was not created"}
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "dotnetcore nuget package was not created"}
     $expectedSymbolsName = "dotnetcore-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
-    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "nuget symbols package was not created"}
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "dotnetcore nuget symbols package was not created"}
+    $expectedPackageName = "dotnetstandard-nuget-pack.$env:appveyor_build_version.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "dotnetstandard nuget package was not created"}
+    $expectedSymbolsName = "dotnetstandard-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "dotnetstandard nuget symbols package was not created"}
+
