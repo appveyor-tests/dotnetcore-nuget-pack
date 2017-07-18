@@ -1,7 +1,0 @@
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\bin\Debug\netcoreapp1.1\dotnetcore-nuget-pack.deps.json
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\bin\Debug\netcoreapp1.1\dotnetcore-nuget-pack.dll
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\bin\Debug\netcoreapp1.1\dotnetcore-nuget-pack.pdb
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\obj\Debug\netcoreapp1.1\dotnetcore-nuget-pack.csprojResolveAssemblyReference.cache
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\obj\Debug\netcoreapp1.1\dotnetcore-nuget-pack.AssemblyInfo.cs
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\obj\Debug\netcoreapp1.1\dotnetcore-nuget-pack.dll
-c:\users\ilya\documents\visual studio 2017\Projects\dotnetcore-nuget-pack\dotnetcore-nuget-pack\obj\Debug\netcoreapp1.1\dotnetcore-nuget-pack.pdb
