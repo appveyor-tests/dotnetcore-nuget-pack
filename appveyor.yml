@@ -1,0 +1,17 @@
+version: 44.55.{build}
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
+deploy_script:
+- ps: |
+    $expectedPackageName = "dotnetcore-nuget-pack.$env:appveyor_build_version.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "nuget package was not created"}
+    $expectedSymbolsName = "dotnetcore-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "nuget symbols package was not created"}
