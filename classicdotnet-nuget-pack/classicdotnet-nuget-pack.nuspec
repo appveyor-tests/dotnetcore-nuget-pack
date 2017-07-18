@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>classicdotnet-nuget-pack</id>
+    <version>$version$</version>
+    <title>classicdotnet-nuget-pack</title>
+    <authors>ilyaf</authors>
+    <owners>ilyaf</owners>
+    <licenseUrl>http://foo.bar</licenseUrl>
+    <projectUrl>http://foo.bar</projectUrl>
+    <iconUrl>http://foo.bar</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>classicdotnet-nuget-pack</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>classicdotnet nuget pack</tags>
+  </metadata>
+</package>
