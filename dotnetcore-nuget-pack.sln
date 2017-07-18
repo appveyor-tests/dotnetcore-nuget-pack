@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore-nuget-pack", "do
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetstandard-nuget-pack", "dotnetstandard-nuget-pack\dotnetstandard-nuget-pack.csproj", "{F9CD0018-31F2-4BA4-9B15-025994B84C62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classicdotnet-nuget-pack", "classicdotnet-nuget-pack\classicdotnet-nuget-pack.csproj", "{F79A2BF3-C022-4473-93B7-7EC998A46DC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F9CD0018-31F2-4BA4-9B15-025994B84C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9CD0018-31F2-4BA4-9B15-025994B84C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9CD0018-31F2-4BA4-9B15-025994B84C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
