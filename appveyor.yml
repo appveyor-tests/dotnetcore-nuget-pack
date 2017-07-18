@@ -1,4 +1,10 @@
 version: 44.55.{build}
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
@@ -21,4 +27,8 @@ deploy_script:
     if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "dotnetstandard nuget package was not created"}
     $expectedSymbolsName = "dotnetstandard-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
     if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "dotnetstandard nuget symbols package was not created"}
+    $expectedPackageName = "classicdotnet-nuget-pack.$env:appveyor_build_version.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "classic .net nuget package was not created"}
+    $expectedSymbolsName = "classicdotnet-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
+    if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedSymbolsName)}) -eq $null) {throw "classic .net nuget symbols package was not created"}
 
