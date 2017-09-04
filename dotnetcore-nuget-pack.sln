@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore-nuget-pack", "dotnetcore-nuget-pack\dotnetcore-nuget-pack.csproj", "{754AF697-99C6-4B8F-A0D7-D7532D22F7A2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetstandard-nuget-pack", "dotnetstandard-nuget-pack\dotnetstandard-nuget-pack.csproj", "{F9CD0018-31F2-4BA4-9B15-025994B84C62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classicdotnet-nuget-pack", "classicdotnet-nuget-pack\classicdotnet-nuget-pack.csproj", "{F79A2BF3-C022-4473-93B7-7EC998A46DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore-unit-test", "dotnetcore-unit-test\dotnetcore-unit-test.csproj", "{F26DBCB0-4D1E-4930-810F-5322738B95AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79A2BF3-C022-4473-93B7-7EC998A46DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D998B6DE-2E6A-4C8B-AD7A-A156956C4AAC}
 	EndGlobalSection
 EndGlobal
