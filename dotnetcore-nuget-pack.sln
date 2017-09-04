@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetstandard-nuget-pack",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classicdotnet-nuget-pack", "classicdotnet-nuget-pack\classicdotnet-nuget-pack.csproj", "{F79A2BF3-C022-4473-93B7-7EC998A46DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore-unit-test", "dotnetcore-unit-test\dotnetcore-unit-test.csproj", "{F26DBCB0-4D1E-4930-810F-5322738B95AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore-unit-test", "dotnetcore-unit-test\dotnetcore-unit-test.csproj", "{F26DBCB0-4D1E-4930-810F-5322738B95AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore-xunit-test", "dotnetcore-xunit-test\dotnetcore-xunit-test.csproj", "{E4024C0E-6CEB-4466-98DC-09D93F13002C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F26DBCB0-4D1E-4930-810F-5322738B95AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4024C0E-6CEB-4466-98DC-09D93F13002C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4024C0E-6CEB-4466-98DC-09D93F13002C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4024C0E-6CEB-4466-98DC-09D93F13002C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4024C0E-6CEB-4466-98DC-09D93F13002C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
