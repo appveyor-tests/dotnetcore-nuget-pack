@@ -1,4 +1,3 @@
-- ps: |
     $expectedPackageName = "dotnetcore-nuget-pack.$env:appveyor_build_version.nupkg"
     if (($artifacts.values | Where-Object {$_.path.EndsWith($expectedPackageName)}) -eq $null) {throw "dotnetcore nuget package was not created"}
     $expectedSymbolsName = "dotnetcore-nuget-pack.$env:appveyor_build_version.symbols.nupkg"
