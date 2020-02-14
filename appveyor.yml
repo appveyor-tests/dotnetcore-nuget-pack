@@ -15,9 +15,9 @@ before_build:
 - cmd: dotnet restore
 build:
   publish_nuget: true
-  #publish_nuget_symbols: true
+  publish_nuget_symbols: true
   include_nuget_references: true
-  use_snupkg_format: true
+  #use_snupkg_format: true
   verbosity: minimal
 test: off
 deploy_script:
